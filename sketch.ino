@@ -104,6 +104,24 @@ void loop()
               angulo2=angulo2-10;  
               miServo2.write(angulo2);
         }
+
+         else if(mssg==5)
+        {
+              mssg2=mssg2-10;
+              if(mssg2<160)
+              {
+                  mssg2=160; 
+              }
+        }
+
+         else if(mssg==0)
+        {
+              mssg2==mssg2+10;
+              if(mssg2>255)
+              {
+                  mssg2=255; 
+              }
+        }
         
         else
         {
